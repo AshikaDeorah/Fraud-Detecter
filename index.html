@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AI Fraud Detection System</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🛡 AI Fraud Detection System</h1>
+    <p class="subtitle">AI-Powered Phishing & Fraud Analyzer</p>
+
+    <textarea id="emailContent" placeholder="Paste content here..."></textarea>
+
+    <input type="text" id="urlInput" placeholder="Enter URL to analyze">
+
+    <input type="file" id="fileInput">
+
+    <div class="buttons">
+        <button onclick="analyzeContent()">Analyze</button>
+        <button class="clearBtn" onclick="clearAll()">Clear</button>
+        <button class="exportBtn" onclick="exportReport()">Export Report</button>
+    </div>
+
+    <div class="loading" id="loading">Analyzing with AI Engine...</div>
+
+    <div class="result">
+        <div class="gauge" id="gauge">
+            <span id="riskScore">0%</span>
+        </div>
+
+        <h3 id="riskLevel">Threat Level: Safe</h3>
+        <h4 id="aiConfidence">AI Confidence Score: 0%</h4>
+        <p id="explanation">Analysis result will appear here.</p>
+
+        <div id="riskBreakdown"></div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
