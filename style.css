@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background: #1e1e2f;
+    padding: 25px;
+    width: 550px;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0,255,255,0.4);
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    color: #00f7ff;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 13px;
+    color: #aaa;
+}
+
+textarea, input {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+}
+
+.buttons {
+    display: flex;
+    gap: 8px;
+}
+
+button {
+    flex: 1;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:first-child { background: #00c6ff; color: black; }
+.clearBtn { background: #ff4b5c; color: white; }
+.exportBtn { background: #28a745; color: white; }
+
+.loading {
+    display: none;
+    text-align: center;
+    margin-top: 10px;
+    color: #00f7ff;
+}
+
+.result {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.gauge {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background: conic-gradient(#00f7ff 0deg, #222 0deg);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+}
